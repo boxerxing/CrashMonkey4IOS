@@ -41,9 +41,8 @@ https://github.com/jonathanpenn/ui-auto-monkey
 	`brew install libimobiledevice`
 
 ###### CrashMonkey4IOS 快速安装
-我们已经将CrashMonkey4IOS发布到了RubyGems你可以通过链接[https://rubygems.org/gems/smart_monkey][rubygems]获取安装命令:
+我们已经将CrashMonkey4IOS发布到了RubyGems你可以通过链接[https://rubygems.org/gems/smart_monkey][rubygems]获取安装命令:`sudo gem install smart_monkey`
 
-	sudo gem install smart_monkey
 ###使用说明:
 执行前需要先配置[custom.js][custom]自定义测试事件相关参数，然后在终端任意当前路径下运行CrashMonkey命令例如:
 	 
