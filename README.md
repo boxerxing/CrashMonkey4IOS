@@ -24,16 +24,24 @@ https://github.com/jonathanpenn/ui-auto-monkey
   [uiatmonkey]: https://github.com/jonathanpenn/ui-auto-monkey/blob/master/UIAutoMonkey.js
   [custom]:https://github.com/vigossjjj/CrashMonkey4IOS/blob/master/lib/ui-auto-monkey/custom.js
   [tp]:https://github.com/vigossjjj/CrashMonkey4IOS/tree/master/lib/ui-auto-monkey/tuneup
+  [rubygems]:https://rubygems.org/gems/smart_monkey
 
-###依赖及安装:
+###系统依赖及工具安装:
+###### 系统工具依赖
 1. 安装Ruby运行环境，建议不要使用OS X自带版本，可自行使用RVM安装最新版的Ruby。建议使用淘宝镜像安装，速度比较快，`$ sed -i -e 's/ftp\.ruby-lang\.org\/pub\/ruby/ruby\.taobao\.org\/mirrors\/ruby/g' ~/.rvm/config/db`
+	
 2. 确保gem可用，也建议使用淘宝镜像 `gem sources --remove https://rubygems.org/;gem sources -a http://ruby.taobao.org/;gem sources -l`
+	
 3. 安装**Homebrew** `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
+###### CrashMonkey4IOS 快速安装
+我们已经将CrashMonkey4IOS发布到了RubyGems你可以通过链接[https://rubygems.org/gems/smart_monkey][rubygems]获取安装命令:
+
+	sudo gem install smart_monkey
 ###使用说明:
-1. 运行`sh reset.sh`安装相关依赖
-2. 执行前需要先配置[custom.js][custom]相关参数
-3. 执行命令`/CrashMonkey4IOS/bin/crash_monkey -a ${App_BunnelID} -w ${iPhone_UDID} -n 1`
+执行前需要先配置[custom.js][custom]自定义测试事件相关参数，然后在终端任意当前路径下运行CrashMonkey命令例如:
+	 
+ 	smart_monkey -a ${App_BunnelID} -w ${iPhone_UDID} -n 1
 
 ###参数变更:
 1. -a 填写应用的BundleID
@@ -65,12 +73,12 @@ Usage: crash_monkey [options]
 
 ###测试报告:
 ***Summary:***
-<img alt="summary" src="https://github.com/vigossjjj/CrashMonkey4IOS/blob/master/pic/summary.jpg">
+<img alt="summary" src="https://github.com/vigossjjj/CrashMonkey4IOS/blob/master/img/summary.jpg">
 ***Detail:***
-<img alt="detail" src="https://github.com/vigossjjj/CrashMonkey4IOS/blob/master/pic/detail.jpg">
+<img alt="detail" src="https://github.com/vigossjjj/CrashMonkey4IOS/blob/master/img/detail.jpg">
 ***SystemLog:***
-<img alt="detail" src="https://github.com/vigossjjj/CrashMonkey4IOS/blob/master/pic/systemlog.jpg">
+<img alt="detail" src="https://github.com/vigossjjj/CrashMonkey4IOS/blob/master/img/systemlog.jpg">
 ***CrashLog:***
-<img alt="detail" src="https://github.com/vigossjjj/CrashMonkey4IOS/blob/master/pic/crashlog.jpg">
+<img alt="detail" src="https://github.com/vigossjjj/CrashMonkey4IOS/blob/master/img/crashlog.jpg">
 
 
