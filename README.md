@@ -34,6 +34,12 @@ https://github.com/jonathanpenn/ui-auto-monkey
 	
 3. 安装**Homebrew** `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
+4. 通过brew安装工具依赖ideviceinstaller 和 libimobiledevice:
+
+	brew install -HEAD ideviceinstaller
+	
+	brew install libimobiledevice
+
 ###### CrashMonkey4IOS 快速安装
 我们已经将CrashMonkey4IOS发布到了RubyGems你可以通过链接[https://rubygems.org/gems/smart_monkey][rubygems]获取安装命令:
 
